@@ -34,7 +34,6 @@ public class HibernateConfig {
         dataSource.setPassword(env.getProperty("db.password"));
         return dataSource;
     }
-
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
